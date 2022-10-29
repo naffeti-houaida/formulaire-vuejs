@@ -1,28 +1,19 @@
 <template>
-  <SignupForm />
+  <formulaireVue />
+  <candidatsVue/>
+
 </template>
 
 <script>
-import SignupForm from './components/SignupForm.vue'
+import formulaireVue from './components/Formulaire.vue';
+import candidatsVue from "./components/Candidats.vue";
 
 export default {
   name: 'App',
   components: {
-    SignupForm
+    formulaireVue,
+    candidatsVue
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-body {
-  background: #222222;
-}
-</style>
